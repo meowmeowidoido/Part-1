@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &377833861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377833862}
+  m_Layer: 0
+  m_Name: Spawn point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &377833862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377833861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.46, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 674066704}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519995978
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,7 +359,8 @@ Transform:
   m_LocalPosition: {x: 0.36, y: 0.32, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 377833862}
   m_Father: {fileID: 1130201274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &674066705
@@ -412,6 +444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9333fb7e4dafa4b4e834ce5524987ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  missilePrefab: {fileID: 2197116420118716072, guid: 5a085d713a83a9842a83f3a8b2a401b3, type: 3}
+  spawn: {fileID: 377833862}
 --- !u!4 &1130201274
 Transform:
   m_ObjectHideFlags: 0
