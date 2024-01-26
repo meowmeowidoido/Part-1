@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 107487558}
   - component: {fileID: 107487561}
   - component: {fileID: 107487560}
+  - component: {fileID: 107487562}
   m_Layer: 0
   m_Name: Road
   m_TagString: Untagged
@@ -1270,6 +1271,19 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &107487562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107487556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841538228dcc95445aaf5f4c7855aac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carObject: {fileID: 1405756180}
 --- !u!1 &383595730 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5832369052824499638, guid: 6b39ec60a589e9e4f867a78e03e4f4b0, type: 3}
@@ -4296,7 +4310,7 @@ Transform:
   m_GameObject: {fileID: 1405756180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7033948, w: 0.71079946}
-  m_LocalPosition: {x: 5.16, y: -0.59, z: 0}
+  m_LocalPosition: {x: -0.91, y: -2.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
