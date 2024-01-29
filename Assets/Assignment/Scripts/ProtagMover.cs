@@ -7,6 +7,7 @@ public class ProtagMover : MonoBehaviour
 {   
     //variables and rigidbody reference 
     public Rigidbody2D rigidbody;
+    
     public float speed;//speed of player
     private float jumppower = 2500000f;//for jump power
     Vector2 direction;   
@@ -46,10 +47,10 @@ public class ProtagMover : MonoBehaviour
         //Time.deltatime makes sure per second and not perframe 
         rigidbody.MovePosition(rigidbody.position + speed * direction * Time.deltaTime);
 
+        
 
 
      
         
     }
-    
 }
