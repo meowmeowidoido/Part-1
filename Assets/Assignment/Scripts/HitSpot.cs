@@ -8,7 +8,7 @@ public class HitSpot : MonoBehaviour
 
     //destroys gameobject (enemy) when the weakspot is hit
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    {   //destroys enemy gameobject
         Destroy(enemy);
     }
 }
